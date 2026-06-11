@@ -10,12 +10,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
-      <ImageView fitHeight="97.0" fitWidth="131.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="84.0" fitWidth="86.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@asset/Logo-ITC-PNG.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="97.0" fitWidth="131.0" layoutX="455.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="84.0" fitWidth="86.0" layoutX="495.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@asset/Logo-GTRSC-png.png" />
          </image>
@@ -40,7 +40,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="113.0" layoutY="157.0" prefHeight="164.0" prefWidth="375.0" text="Public main         java{&#10;&#9;&#10;&#9;Public static void  main (     String      args){&#10;&#9;&#9;&#10;&#9;&#9;system.out.println(&quot;Hello Team!&quot;);&#10;&#9;}&#10;}" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="112.0" AnchorPane.topAnchor="157.0">
+      <Label layoutX="113.0" layoutY="154.0" prefHeight="167.0" prefWidth="375.0" style="-fx-border-color: black;" text="Public main         java{&#10;&#9;&#10;&#9;Public static void  main (     String      args){&#10;&#9;&#9;&#10;&#9;&#9;system.out.println(&quot;Hello Team!&quot;);&#10;&#9;}&#10;}" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="112.0" AnchorPane.topAnchor="154.0">
          <font>
             <Font size="17.0" />
          </font></Label>

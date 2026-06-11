@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -17,5 +19,30 @@
             <Image url="@asset/logo-GTR-1024x1024.jpg" />
          </image>
       </ImageView>
+      <Label layoutX="202.0" layoutY="26.0" prefHeight="58.0" prefWidth="196.0" text="MIni Project 2">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="84.0" prefHeight="18.0" prefWidth="134.0" text="QCM Exam ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="126.0" prefHeight="18.0" prefWidth="126.0" text="Duration: 2mn 0s">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="160.0" prefHeight="18.0" prefWidth="86.0" text="Timmer: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="171.0" prefHeight="164.0" prefWidth="331.0" text="Public main   java{&#10;&#9;Public static void  main (     String      args){&#10;&#9;&#9;&#10;&#9;&#9;system.out.println(&quot;Hello Team!&quot;);&#10;&#9;}&#10;}" />
+      <ChoiceBox layoutX="104.0" layoutY="158.0" prefHeight="26.0" prefWidth="77.0" />
+      <ChoiceBox layoutX="315.0" layoutY="219.0" prefHeight="26.0" prefWidth="54.0" />
+      <ChoiceBox layoutX="185.0" layoutY="200.0" prefHeight="0.0" prefWidth="33.0" />
+      <ChoiceBox layoutX="182.0" layoutY="253.0" prefHeight="26.0" prefWidth="54.0" />
    </children>
 </AnchorPane>

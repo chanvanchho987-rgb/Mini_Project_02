@@ -12,12 +12,12 @@
    <children>
       <ImageView fitHeight="97.0" fitWidth="131.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@asset/itc-cambodia.jpg" />
+            <Image url="@asset/Logo-ITC-PNG.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="97.0" fitWidth="131.0" layoutX="455.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@asset/logo-GTR-1024x1024.jpg" />
+            <Image url="@asset/Logo-GTRSC-png.png" />
          </image>
       </ImageView>
       <Label layoutX="202.0" layoutY="26.0" prefHeight="58.0" prefWidth="196.0" text="MIni Project 2">

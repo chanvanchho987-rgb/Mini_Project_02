@@ -17,13 +17,13 @@ public class Controller {
     private Button button_submit;
 
     @FXML
-    private ChoiceBox<?> choice_box1;
+    private ChoiceBox<String> choice_box1;
 
     @FXML
-    private ChoiceBox<?> choice_box2;
+    private ChoiceBox<String> choice_box2;
 
     @FXML
-    private ChoiceBox<?> choice_box3;
+    private ChoiceBox<String> choice_box3;
 
     @FXML
     private Label label_result;
@@ -36,14 +36,15 @@ public class Controller {
 
     @FXML
     void initialize() {
-        assert button_submit != null : "fx:id=\"button_submit\" was not injected: check your FXML file 'View.fxml'.";
-        assert choice_box1 != null : "fx:id=\"choice_box1\" was not injected: check your FXML file 'View.fxml'.";
-        assert choice_box2 != null : "fx:id=\"choice_box2\" was not injected: check your FXML file 'View.fxml'.";
-        assert choice_box3 != null : "fx:id=\"choice_box3\" was not injected: check your FXML file 'View.fxml'.";
-        assert label_result != null : "fx:id=\"label_result\" was not injected: check your FXML file 'View.fxml'.";
-        assert label_timmer != null : "fx:id=\"label_timmer\" was not injected: check your FXML file 'View.fxml'.";
-        assert title_project != null : "fx:id=\"title_project\" was not injected: check your FXML file 'View.fxml'.";
+        System.out.println("Controller initialized");
+        choice_box1.setValue("Choose");
+        choice_box2.setValue("Choose");
+        choice_box3.setValue("Choose");
 
+        choice_box1.getIte
+
+
+     
     }
 
 }

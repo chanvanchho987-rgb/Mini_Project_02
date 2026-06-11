@@ -37,13 +37,13 @@ public class Controller {
     @FXML
     void initialize() {
         System.out.println("Controller initialized");
-        choice_box1.setValue("Choose");
-        choice_box2.setValue("Choose");
-        choice_box3.setValue("Choose");
+        choice_box1.setValue("Select");
+        // choice_box2.setValue("Choose");
+        // choice_box3.setValue("Choose");
 
-        choice_box1.getItems().addAll("private", "Class", "String");
-        choice_box2.getItems().addAll("hai", "String", "System");
-        choice_box3.getItems().addAll("private", "love", "System");
+        // choice_box1.getItems().addAll("private", "Class", "String");
+        // choice_box2.getItems().addAll("hai", "String", "System");
+        // choice_box3.getItems().addAll("private", "love", "System");
 
 
 

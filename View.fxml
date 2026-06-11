@@ -44,9 +44,9 @@
          <font>
             <Font size="17.0" />
          </font></Label>
-      <ChoiceBox layoutX="350.0" layoutY="203.0" prefHeight="36.0" prefWidth="73.0" />
-      <ChoiceBox layoutX="163.0" layoutY="157.0" prefHeight="36.0" prefWidth="73.0" />
-      <ChoiceBox layoutX="167.0" layoutY="257.0" prefHeight="36.0" prefWidth="73.0" />
+      <ChoiceBox fx:id="choice_box2" layoutX="350.0" layoutY="203.0" prefHeight="36.0" prefWidth="73.0" />
+      <ChoiceBox fx:id="choice_box1" layoutX="163.0" layoutY="157.0" prefHeight="36.0" prefWidth="73.0" />
+      <ChoiceBox fx:id="choice_box3" layoutX="167.0" layoutY="257.0" prefHeight="36.0" prefWidth="73.0" />
       <Label fx:id="label_timmer" layoutX="116.0" layoutY="131.0" prefHeight="18.0" prefWidth="86.0">
          <font>
             <Font size="15.0" />

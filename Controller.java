@@ -35,6 +35,28 @@ public class Controller {
     private Label title_project;
 
     @FXML
+    void on_submit() {
+        String choice1 = choice_box1.getValue();
+        String choice2 = choice_box2.getValue();
+        String choice3 = choice_box3.getValue();
+
+        Integer score = 0;
+
+        if (choice1.equals("Class")) {
+            score++;
+        }
+
+        if (choice2.equals("String")) {
+            score++;
+        }
+
+        if (choice3.equals("System")) {
+            score++;
+        }
+        label_result.setText("Your score: " + score + "/3");
+    }
+
+    @FXML
     void initialize() {
         System.out.println("Controller initialized");
         choice_box1.setValue("Select");
@@ -44,11 +66,6 @@ public class Controller {
         choice_box1.getItems().addAll("private", "Class", "String");
         choice_box2.getItems().addAll("hai", "String", "System");
         choice_box3.getItems().addAll("private", "love", "System");
-
-
-
-
-     
     }
 
 }

@@ -20,7 +20,7 @@
             <Image url="@asset/logo-GTR-1024x1024.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="title_project" layoutX="202.0" layoutY="26.0" prefHeight="58.0" prefWidth="196.0" text="MIni Project 2">
+      <Label layoutX="202.0" layoutY="26.0" prefHeight="58.0" prefWidth="196.0" text="MIni Project 2">
          <font>
             <Font size="25.0" />
          </font>
@@ -41,9 +41,9 @@
          </font>
       </Label>
       <Label layoutX="149.0" layoutY="171.0" prefHeight="164.0" prefWidth="331.0" text="Public main         java{&#10;&#9;&#10;&#9;Public static void  main (     String      args){&#10;&#9;&#9;&#10;&#9;&#9;system.out.println(&quot;Hello Team!&quot;);&#10;&#9;}&#10;}" />
-      <ChoiceBox fx:id="choice_box2" layoutX="315.0" layoutY="226.0" prefHeight="26.0" prefWidth="54.0" />
-      <ChoiceBox fx:id="choice_box1" layoutX="185.0" layoutY="187.0" prefHeight="26.0" prefWidth="54.0" />
-      <ChoiceBox fx:id="choice_box3" layoutX="182.0" layoutY="253.0" prefHeight="26.0" prefWidth="54.0" />
+      <ChoiceBox layoutX="315.0" layoutY="226.0" prefHeight="26.0" prefWidth="54.0" />
+      <ChoiceBox layoutX="185.0" layoutY="187.0" prefHeight="26.0" prefWidth="54.0" />
+      <ChoiceBox layoutX="182.0" layoutY="253.0" prefHeight="26.0" prefWidth="54.0" />
       <Label fx:id="label_timmer" layoutX="116.0" layoutY="161.0" prefHeight="18.0" prefWidth="86.0">
          <font>
             <Font size="15.0" />
@@ -54,6 +54,6 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Button fx:id="button_submit" layoutX="220.0" layoutY="339.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="114.0" text="Submit" />
+      <Button layoutX="220.0" layoutY="339.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="114.0" text="Submit" />
    </children>
 </AnchorPane>

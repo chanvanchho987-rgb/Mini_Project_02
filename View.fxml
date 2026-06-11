@@ -20,7 +20,7 @@
             <Image url="@asset/Logo-GTRSC-png.png" />
          </image>
       </ImageView>
-      <Label layoutX="205.0" layoutY="8.0" prefHeight="58.0" prefWidth="163.0" text="MIni Project 2">
+      <Label fx:id="title_project" layoutX="205.0" layoutY="8.0" prefHeight="58.0" prefWidth="163.0" text="MIni Project 2">
          <font>
             <Font size="25.0" />
          </font>
@@ -57,6 +57,6 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Button layoutX="223.0" layoutY="328.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="114.0" text="Submit" />
+      <Button fx:id="button_submit" layoutX="223.0" layoutY="328.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="114.0" text="Submit" />
    </children>
 </AnchorPane>

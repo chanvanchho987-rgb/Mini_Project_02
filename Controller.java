@@ -107,7 +107,7 @@ public class Controller {
     private void updateTimerLabel() {
         int minutes = timeSeconds / 60;
         int seconds = timeSeconds % 60;
-        label_timmer.setText(String.format("%02d:%02d", minutes, seconds));
+        label_timmer.setText(String.format("%02dmn:%02ds", minutes, seconds));
     }
 
 }

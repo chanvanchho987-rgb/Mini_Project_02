@@ -1,12 +1,12 @@
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
+
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
-import javafx.util.Duration;
 
 public class Controller {
 
@@ -37,13 +37,8 @@ public class Controller {
     @FXML
     private Label title_project;
 
-    private Timeline timeline;
-    private int timeSeconds = 120;
-
     @FXML
-    void on_submit() {
-        stopTimer();
-
+    void on_submit(ActionEvent event) {
         String choice1 = choice_box1.getValue();
         String choice2 = choice_box2.getValue();
         String choice3 = choice_box3.getValue();
@@ -61,9 +56,7 @@ public class Controller {
         if (choice3.equals("System")) {
             score++;
         }
-
         label_result.setText("Your score: " + score + "/3");
-        button_submit.setDisable(true);
     }
 
     @FXML
@@ -77,37 +70,36 @@ public class Controller {
         choice_box2.getItems().addAll("hai", "String", "System");
         choice_box3.getItems().addAll("private", "love", "System");
 
-        startTimer();
+        System.out.println("Running Main Thread");
+
+        start_timmer();
     }
 
-    private void startTimer() {
-        updateTimerLabel();
+    Thread thread;
 
-        timeline = new Timeline(new KeyFrame(Duration.seconds(1), event -> {
-            timeSeconds--;
-            updateTimerLabel();
+    void start_timmer() {
+        thread = new Thread(() -> {
+            for (int i = 120; i >= 0; i--) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
-            if (timeSeconds <= 0) {
-                stopTimer();
-                label_timmer.setText("00:00");
-                on_submit(); // Auto-submit when time is up
+                int second = i;
+                Platform.runLater(() -> label_timmer.setText(second / 60 + "mn" + second % 60
+                        + "s"));
+
+                if (second == 0) {
+                    thread.interrupt();
+                    Platform.runLater(() -> on_submit(null));
+                    Platform.runLater(() -> label_timmer.setText("Time is up!"));
+                }
             }
-        }));
+        });
 
-        timeline.setCycleCount(Timeline.INDEFINITE);
-        timeline.play();
-    }
-
-    private void stopTimer() {
-        if (timeline != null) {
-            timeline.stop();
-        }
-    }
-
-    private void updateTimerLabel() {
-        int minutes = timeSeconds / 60;
-        int seconds = timeSeconds % 60;
-        label_timmer.setText(String.format("%02dmn:%02ds", minutes, seconds));
+        thread.setDaemon(true);
+        thread.start();
     }
 
 }
